@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ohmic"
+version = "1.0.0"
+description = "Ohmic Autonomous AI EDA & KiCad Schematic Toolsuite"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "Ohmic Hardware Engineering Team" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)",
+]
+
+[project.scripts]
+ohmic = "ohmic.cli:main"
